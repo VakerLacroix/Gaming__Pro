@@ -1,0 +1,164 @@
+/*CONTENEDOR*/
+
+.contenedor__carrito {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "menu ubicacion__carrito"
+        "menu funciones__carrito"
+        "marcas marcas";
+    justify-items: center;
+    margin: 1em 1em;
+
+    img {
+        grid-area: img;
+        width: 90%;
+        height: auto;
+        display: flex;
+
+    }
+}
+
+/*ARTICULOS CARITO*/
+
+.ubicacion__carrito {
+    grid-area: ubicacion__carrito;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "titulo__carrito"
+        "seccion__carrito";
+    margin: 1em 1em;
+    justify-items: center;
+
+    h1 {
+        grid-area: titulo_carrito;
+        @include h1__pages;
+    }
+
+    h4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+/*PRODUCTOS*/
+
+.seccion__carrito {
+    grid-area: seccion__carrito;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: .5em;
+    margin: auto .5em;
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "img c__titulo c__tipo c__cantidad c__subtotal c__total c__eliminar"
+        ;
+        border-radius: .5em;
+        margin: .3em .3em;
+        justify-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        img {
+            grid-area: img;
+            width: 80%;
+            background-image: cover;
+            padding: 1em 1em .3em 1em;
+        }
+
+        ul {
+            grid-area: ul;
+            margin: 0em;
+            padding: .3em 0em.5em 0em;
+            font-weight: $font-medium;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+
+        }
+
+        li {
+            font-size: $font-s;
+            padding: .0em .0em;
+            text-align: center;
+        }
+
+        button {
+            font-size: $font-s;
+            font-weight: $font-medium;
+            text-decoration: none;
+            @include buttons2;
+            color: $color-7;
+            margin: .0em 2em;
+        }
+    }
+}
+
+.p__nombre {
+    font-weight: $font-bold;
+}
+
+.p__precio {
+    font-weight: $font-bold;
+}
+
+.funciones__carrito {
+    grid-area: funciones__carrito;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: .5em;
+
+    button {
+        border-radius: .5em;
+        padding: .5em;
+        font-weight: $font-bold;
+        font-size: $font-xs;
+    }
+}
+
+.seccion__carrito {
+    h5 {
+        color: $color-3;
+    }
+}
+
+.marcas {
+    grid-area: marcas;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: desplazamiento 60s linear infinite;
+
+    img {
+        grid-area: heroimg;
+        width: 7%;
+        height: auto;
+        padding: 1.3em;
+    }
+}

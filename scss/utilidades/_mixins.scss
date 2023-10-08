@@ -1,0 +1,105 @@
+/* BUTTONS */
+
+@mixin buttons {
+    padding: .15em;
+    margin: .1em;
+    font-weight: $font-bold;
+    font-size: $font-s;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+@mixin buttons2 {
+    padding: .15em;
+    margin: .1em;
+    font-weight: $font-normal;
+    font-size: $font-s;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+@mixin buttons3 {
+    border-radius: .5em;
+    padding: .5em;
+    font-weight: $font-normal;
+    font-size: $font-s;
+}
+
+/* CARDS */
+
+@mixin cards {
+    background: linear-gradient(to right, $color-2, $color-3, $color-4, );
+    box-shadow: $shadow;
+    border-radius: 1em;
+}
+
+/*H1*/
+
+@mixin h1__pages {
+    grid-area: h1;
+    text-align: center;
+    font-size: $font-l;
+    font-weight: $font-bold;
+    color: $color-6;
+    margin: .2em auto;
+}
+
+/*H2*/
+
+@mixin h2 ($color-5, $font-s) {
+    font-size: $font-s;
+    font-weight: bold;
+    margin: .7em auto .1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    color: $color-5;
+}
+
+/* OTROS*/
+
+@mixin flex__cen--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5em;
+    margin: 0em 0em;
+}
+
+@mixin flex__cen--colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: .5em;
+    margin: 0em 0em;
+}
+
+@mixin producto__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0em;
+    padding: 0em;
+}
+
+@mixin productos__li {
+    list-style: none;
+    font-size: $font-xs;
+}
+
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

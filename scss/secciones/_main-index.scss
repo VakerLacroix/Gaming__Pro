@@ -1,0 +1,250 @@
+/*HERO*/
+
+.hero {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em 0em 0em;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*CONTENEDOR*/
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "menu ubicacion__articulos"
+        "menu img"
+        "ubicacion__destacados ubicacion__destacados "
+        "marcas marcas";
+    justify-items: center;
+    margin: .1em 1em;
+
+    img {
+        grid-area: img;
+        width: 90%;
+        height: auto;
+        display: flex;
+    }
+}
+
+/*MENU*/
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: .7em 2em;
+    background-color: $color-2;
+    box-shadow: $shadow;
+    border-radius: 1em;
+    height: 590px;
+}
+
+.bot__ppal {
+    @include buttons;
+}
+
+.bot__sec {
+    @include buttons2;
+}
+
+
+/*ARTICULOS*/
+
+.ubicacion__articulos {
+    grid-area: ubicacion__articulos;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "titulo__productos"
+        "seccion__productos";
+    justify-items: center;
+
+    h1 {
+        grid-area: titulo_productos;
+        @include h1__pages;
+    }
+}
+
+/*PRODUCTOS*/
+
+.seccion__productos {
+    grid-area: seccion__productos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .3em;
+    padding: .5em;
+
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "img"
+            "ul"
+        ;
+        @include cards;
+        margin: .3em .3em;
+        justify-items: center;
+
+
+        img {
+            grid-area: img;
+            width: 80%;
+            background-image: cover;
+            padding: 1em 1em .3em 1em;
+        }
+
+        ul {
+            grid-area: ul;
+            margin: 0em;
+            padding: .3em 0em.5em 0em;
+            font-weight: $font-medium;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+
+        }
+
+        li {
+            font-size: $font-s;
+            padding: .0em .0em;
+            text-align: center;
+        }
+
+        button {
+            font-size: $font-s;
+            font-weight: $font-medium;
+            text-decoration: none;
+            background-color: $color-6;
+            @include buttons3;
+            color: $color-0;
+            margin: .2em 0em;
+        }
+    }
+}
+
+.p__nombre {
+    font-weight: $font-bold;
+}
+
+.p__precio {
+    font-weight: $font-bold;
+}
+
+/*DESTACADOS*/
+
+.ubicacion__destacados {
+    grid-area: ubicacion__destacados;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "titulo__productos"
+        "seccion__destacados";
+    justify-items: center;
+
+    h2 {
+        grid-area: titulo__productos;
+        @include h1__pages;
+    }
+}
+
+.seccion__destacados {
+    grid-area: seccion__destacados;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .3em;
+    padding: .5em;
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "img"
+            "ul"
+        ;
+        background: linear-gradient(to right, $color-2, $color-3, $color-4, );
+        box-shadow: $shadow;
+        border-radius: 1em;
+        margin: .3em .3em;
+        justify-items: center;
+
+
+        img {
+            grid-area: img;
+            width: 80%;
+            background-image: cover;
+            padding: 1em 1em .3em 1em;
+        }
+
+        ul {
+            grid-area: ul;
+            margin: .5em;
+            padding: .3em 0em.5em 0em;
+            font-weight: $font-medium;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+
+        }
+
+        li {
+            font-size: $font-s;
+            padding: .0em .0em;
+            text-align: center;
+        }
+
+        button {
+            font-size: $font-s;
+            font-weight: $font-medium;
+            text-decoration: none;
+            background-color: $color-6;
+            @include buttons3;
+            color: $color-0;
+            margin: .2em 0em;
+        }
+    }
+}
+
+.p__nombre {
+    font-weight: $font-bold;
+}
+
+.p__precio {
+    font-weight: $font-bold;
+}
+
+.marcas {
+    grid-area: marcas;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: desplazamiento 90s linear infinite;
+
+    img {
+        grid-area: heroimg;
+        width: 7%;
+        height: auto;
+        padding: 1.3em;
+    }
+}

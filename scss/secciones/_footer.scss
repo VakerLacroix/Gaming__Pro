@@ -1,0 +1,60 @@
+.footer {
+    background-image: url(/img/fondo_hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "contactanos correo ubicacion redes";
+
+    li {
+        color: $color-0;
+    }
+}
+
+.footer__contactanos {
+    grid-area: contactanos;
+    @include flex__cen--colum;
+}
+
+.footer__correo {
+    grid-area: correo;
+    @include flex__cen--colum;
+}
+
+.footer__ubicacion {
+    grid-area: ubicacion;
+    @include flex__cen--colum;
+    text-align: center;
+}
+
+.footer__redes {
+    grid-area: redes;
+    @include flex__cen--row;
+}
+
+.footer__nro {
+    color: $color-0;
+    margin: auto, 0px;
+}
+
+.footer__redes {
+    img {
+        width: 1.5em;
+    }
+}
+
+/* @media(min-width:400px){ MOBILE*/
+
+@media only screen and (min-width:401px) {
+
+    /*TABLET STYLE */
+    .footer {
+        ul {
+            li {
+                font-size: $font-s;
+            }
+        }
+    }
+}
