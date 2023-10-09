@@ -70,7 +70,7 @@ const productos = [
     new Producto(41, "UPS TRV", "Estabilizadores", "Estabilizadores", "./img/Img_Productos/id_41.jpg", "650 C/USB", 46000, 0),
     new Producto(42, "UPS APC", "Estabilizadores", "Estabilizadores", "./img/Img_Productos/id_42.jpg", "BACK EASY BV 1000VA", 109000, 0),
 
-    new Producto(43, "Windows 11 Pro", "Sistema Operativo", "Sistema Operativo", "/img/Img_Productos/id_43.jpg", "64B OEM SISTEMA NUEVO FISICO", 63000, 0),
+    new Producto(43, "Windows 11 Pro", "Sistema Operativo", "Sistema Operativo", "./img/Img_Productos/id_43.jpg", "64B OEM SISTEMA NUEVO FISICO", 63000, 0),
 ]
 
 

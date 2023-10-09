@@ -153,6 +153,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
+    overflow: hidden;
     animation: desplazamiento 60s linear infinite;
 
     img {
