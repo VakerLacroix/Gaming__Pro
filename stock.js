@@ -62,13 +62,13 @@ const productos = [
     new Producto(35, "Auricular Redragon", "Auriculares", "Perifericos", "./img/Img_Productos/id_35.jpg", "H260 Hylas White RGB", 19000, 0),
     new Producto(36, "Auriculares HyperX", "Auriculares", "Perifericos", "./img/Img_Productos/id_36.jpg", "Gaming Cloud II Wireless", 92400, 0),
 
-    new Producto(37, "Monitor Led Gfast", "Monitores", "Componentes", "/img/Img_Productos/id_37.jpg", "19.5 pulgadas T-195 VGAHDMI", 64000, 0),
-    new Producto(38, "Monitor Samsung", "Monitores", "Componentes", "/img/Img_Productos/id_38.jpg", "24 pulgadas Curvo F390 Full HD FreeSync", 103000, 0),
-    new Producto(39, "Monitor Led Asus", "Monitores", "Componentes", "/img/Img_Productos/id_39.jpg", "LED TN 24 VG248QG-J FHD 165Hz 0.5Ms Freesync Gsync", 215000, 0),
+    new Producto(37, "Monitor Led Gfast", "Monitores", "Componentes", "./img/Img_Productos/id_37.jpg", "19.5 pulgadas T-195 VGAHDMI", 64000, 0),
+    new Producto(38, "Monitor Samsung", "Monitores", "Componentes", "./img/Img_Productos/id_38.jpg", "24 pulgadas Curvo F390 Full HD FreeSync", 103000, 0),
+    new Producto(39, "Monitor Led Asus", "Monitores", "Componentes", "./img/Img_Productos/id_39.jpg", "LED TN 24 VG248QG-J FHD 165Hz 0.5Ms Freesync Gsync", 215000, 0),
 
-    new Producto(40, "Diskpro", "Estabilizadores", "Estabilizadores", "/img/Img_Productos/id_40.jpg", "TCA-2000N LYONN AVR", 12800, 0),
-    new Producto(41, "UPS TRV", "Estabilizadores", "Estabilizadores", "/img/Img_Productos/id_41.jpg", "650 C/USB", 46000, 0),
-    new Producto(42, "UPS APC", "Estabilizadores", "Estabilizadores", "/img/Img_Productos/id_42.jpg", "BACK EASY BV 1000VA", 109000, 0),
+    new Producto(40, "Diskpro", "Estabilizadores", "Estabilizadores", "./img/Img_Productos/id_40.jpg", "TCA-2000N LYONN AVR", 12800, 0),
+    new Producto(41, "UPS TRV", "Estabilizadores", "Estabilizadores", "./img/Img_Productos/id_41.jpg", "650 C/USB", 46000, 0),
+    new Producto(42, "UPS APC", "Estabilizadores", "Estabilizadores", "./img/Img_Productos/id_42.jpg", "BACK EASY BV 1000VA", 109000, 0),
 
     new Producto(43, "Windows 11 Pro", "Sistema Operativo", "Sistema Operativo", "/img/Img_Productos/id_43.jpg", "64B OEM SISTEMA NUEVO FISICO", 63000, 0),
 ]
