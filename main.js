@@ -3,19 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const seccion__destacados = document.querySelector(".seccion__destacados");
     const botones__ppals = document.querySelectorAll(".bot__ppal");
     const botones__secun = document.querySelectorAll(".bot__sec");
-    const tituloProductos = document.querySelector(".titulo__productos");
-    let agregarArticulos = document.querySelectorAll(".p__agregar");
-    const numCarrito = document.querySelector(".numero__car");
+    const tituloProductos = document.querySelector(".titulo__productos")
+    let agregarArticulos = document.querySelectorAll(".p__agregar")
+    const numCarrito = document.querySelector(".numero__car")
 
-    let productos;
 
-    fetch("./stock.json")
-        .then(response => response.json())
-        .then(data => {
-            productos = data.productos;
-            mostrarProductos(productos);
-            mostrarDestacados();
-        });
+
 
     function mostrarProductos(productosPorCategoria) {
         if (!productosPorCategoria) return;
@@ -36,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     mostrarProductos(productos);
 
+// MOSTRAR PRODUCTOS SEGUN LA CATEGORIA//
+
     botones__ppals.forEach(boton => {
         boton.addEventListener("click", function (a) {
             const categoriaSeleccionada = boton.textContent.trim().toUpperCase();
@@ -55,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
             mostrarProductos(productosFiltrados);
         });
     });
+
+// AGREGAR PRODUCTOS AL CARRITO//
 
     function botonAgregar() {
         agregarArticulos = document.querySelectorAll(".p__agregar")
@@ -86,30 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
             agregados.cantidad = 1;
             productosCarrito.push(agregados);
         }
-        Toastify({
-            text: "Agregado al Carrito",
-            duration: 3000,
-            destination: "https://github.com/apvarun/toastify-js",
-            newWindow: true,
-            close: false,
-            gravity: "top",
-            position: "right",
-            stopOnFocus: true,
-            style: {
-              background: "#ec0000",
-              borderRadius: ".5em",
-              fontSans: "Inter var",
-            },
-            offset: {
-                  x: "1rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-                  y: "5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
-                },
-            onClick: function(){} // Callback after click
-          }).showToast();
+
         actualizarCarro();
 
         localStorage.setItem("productosEnCarrito", JSON.stringify(productosCarrito));
     }
+
+// ACTUALIZAR CANTIDAD DE PRODUCTYOS EN EL ICONO DEL CARRITO//   
 
     function actualizarCarro() {
         let numCar = productosCarrito.reduce((acumulador, producto) => acumulador + producto.cantidad, 0);
@@ -117,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+// MOSTRAR TODOS LOS PRODUCTOS DESTACADOS DE MANERA RANDOM//
 
     function mostrarDestacados() {
         if (!productos) {
