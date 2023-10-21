@@ -70,12 +70,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     vaciarCarrito.addEventListener("click", vaciar);
     function vaciar() {
-
-        productosEnCarrito.length = 0;
-        localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
-        cargarProductos();
-        actualizarEstadoCarritoVacio();
-    }
+       
+        Swal.fire({
+          text: "¿Está seguro de que desea vaciar el carrito?",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#3085d6',
+          cancelButtonText: 'Cancelar',
+          confirmButtonText: 'Confirmar'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
+            cargarProductos();
+            actualizarEstadoCarritoVacio();
+          }
+        });
+      }
     function actualizartTotal() {
         const totalSuma = productosEnCarrito.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad), 0);
         mostrarTotal.innerText = `$${totalSuma}`;

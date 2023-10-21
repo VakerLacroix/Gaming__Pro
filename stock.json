@@ -1,0 +1,437 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Desktop Armada 1",
+        "tipo": "Desktops",
+        "categoria": "Equipos",
+        "imagen": "./img/Img_Productos/id_1.jpg",
+        "descripcion": "Intel Core I3 10100F 8GB 240GB SSD GT 210 WIFI",
+        "precio": 259000,
+        "cantidad": 0
+      },
+      {
+        "id": 2,
+        "nombre": "Desktop Armada 2",
+        "tipo": "Desktops",
+        "categoria": "Equipos",
+        "imagen": "./img/Img_Productos/id_2.jpg",
+        "descripcion": "AMD Ryzen 3 4100 16GB 480GB SSD GT 210",
+        "precio": 317000,
+        "cantidad": 0
+      },
+      {
+        "id": 3,
+        "nombre": "Desktop Armada 3",
+        "tipo": "Desktops",
+        "categoria": "Equipos",
+        "imagen": "./img/Img_Productos/id_3.jpg",
+        "descripcion": "Intel Core I5 11400F 16GB 480GB SSD RTX 3060",
+        "precio": 860000,
+        "cantidad": 0
+      },
+      {
+        "id": 4,
+        "nombre": "Notebook Noblex N14X3000 14",
+        "tipo": "Notebooks",
+        "categoria": "Equipos",
+        "imagen": "./img/Img_Productos/id_4.jpg",
+        "descripcion": "Intel I3 1115G4 8GB Ram 256GB SSD W11",
+        "precio": 315000,
+        "cantidad": 0
+      },
+      {
+        "id": 5,
+        "nombre": "Notebook Lenovo V14-ITL 14",
+        "tipo": "Notebooks",
+        "categoria": "Equipos",
+        "imagen": "./img/Img_Productos/id_5.jpg",
+        "descripcion": "Intel Core I5 1135G7 8GB 256GB SSD",
+        "precio": 455000,
+        "cantidad": 0
+      },
+      {
+        "id": 6,
+        "nombre": "Notebook HP 15-DY2054LA",
+        "tipo": "Notebooks",
+        "categoria": "Equipos",
+        "imagen": "./img/Img_Productos/id_6.jpg",
+        "descripcion": "Intel Core I5 1135G7 8GB SSD 256GB 15.6 W11",
+        "precio": 613000,
+        "cantidad": 0
+      },
+      {
+        "id": 7,
+        "nombre": "Micro Intel I3",
+        "tipo": "Procesadores",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_7.jpg",
+        "descripcion": "Intel I3-10105F 4.4Ghz 6Mb S.1200",
+        "precio": 75300,
+        "cantidad": 0
+      },
+      {
+        "id": 8,
+        "nombre": "Micro Intel I5",
+        "tipo": "Procesadores",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_8.jpg",
+        "descripcion": "Intel Core I5 11600K ROCKET LAKE 6/12 4.90GHZ 12MB LGA1200",
+        "precio": 248000,
+        "cantidad": 0
+      },
+      {
+        "id": 9,
+        "nombre": "Micro Intel I7",
+        "tipo": "Procesadores",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_9.jpg",
+        "descripcion": "Intel Core i7 13700F 5.2GHz Turbo Socket 1700",
+        "precio": 374000,
+        "cantidad": 0
+      },
+      {
+        "id": 10,
+        "nombre": "Mother Asus",
+        "tipo": "Motherboards",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_10.jpg",
+        "descripcion": "Prime H610M-K DDR4 S1700",
+        "precio": 89100,
+        "cantidad": 0
+      },
+      {
+        "id": 11,
+        "nombre": "Mother GIGABYTE",
+        "tipo": "Motherboards",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_11.jpg",
+        "descripcion": "H610M S2H DDR4 S1700",
+        "precio": 105400,
+        "cantidad": 0
+      },
+      {
+        "id": 12,
+        "nombre": "Mother MSI",
+        "tipo": "Motherboards",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_12.jpg",
+        "descripcion": "MAG B760M MORTAR DDR4 S1700",
+        "precio": 168700,
+        "cantidad": 0
+      },
+      {
+        "id": 13,
+        "nombre": "Cooler CPU",
+        "tipo": "Refrigeracion",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_13.jpg",
+        "descripcion": "ID-Cooling SE-902-SD V2",
+        "precio": 9300,
+        "cantidad": 0
+      },
+      {
+        "id": 14,
+        "nombre": "Cooler Darkflash",
+        "tipo": "Refrigeracion",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_14.jpg",
+        "descripcion": "Darkair White Fixed RGB",
+        "precio": 24700,
+        "cantidad": 0
+      },
+      {
+        "id": 15,
+        "nombre": "Cooler CPU Master",
+        "tipo": "Refrigeracion",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_15.jpg",
+        "descripcion": "HYPER 212 TURBO ARGB",
+        "precio": 49800,
+        "cantidad": 0
+      },
+      {
+        "id": 16,
+        "nombre": "Ram OEM",
+        "tipo": "Memorias Ram",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_16.jpg",
+        "descripcion": "4GB 3200 Mhz DDR4 BULK",
+        "precio": 9800,
+        "cantidad": 0
+      },
+      {
+        "id": 17,
+        "nombre": "Ram Corsair",
+        "tipo": "Memorias Ram",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_17.jpg",
+        "descripcion": "DDR4 8GB 2666Mhz Vengeance LPX Black",
+        "precio": 23300,
+        "cantidad": 0
+      },
+      {
+        "id": 18,
+        "nombre": "Ram Patriot",
+        "tipo": "Memorias Ram",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_18.jpg",
+        "descripcion": "Viper DDR4 16GB 3200MHz RGB",
+        "precio": 46000,
+        "cantidad": 0
+      },
+      {
+        "id": 19,
+        "nombre": "Placa de Video Nvidia",
+        "tipo": "Placas de video",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_19.jpg",
+        "descripcion": "Geforce MSI GT 210 1GB DDR3 Low Profile",
+        "precio": 49400,
+        "cantidad": 0
+      },
+      {
+        "id": 20,
+        "nombre": "Placa de Video ASUS",
+        "tipo": "Placas de video",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_20.jpg",
+        "descripcion": "GeForce GTX 1650 4GB GDDR6 Phoenix EVO OC",
+        "precio": 159200,
+        "cantidad": 0
+      },
+      {
+        "id": 21,
+        "nombre": "Placa de Video Pny",
+        "tipo": "Placas de video",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_21.jpg",
+        "descripcion": "Geforce RTX 4070 Verto Dual Fan 12GB GDDR6X",
+        "precio": 705200,
+        "cantidad": 0
+      },
+      {
+        "id": 22,
+        "nombre": "Disco Solido SSD",
+        "tipo": "Almacenamiento",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_22.jpg",
+        "descripcion": "120GB Adata SU650 Ultimate SATA III",
+        "precio": 13000,
+        "cantidad": 0
+      },
+      {
+        "id": 23,
+        "nombre": "Disco Solido SSD Kingston",
+        "tipo": "Almacenamiento",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_23.jpg",
+        "descripcion": "480GB A400 SATA III",
+        "precio": 23800,
+        "cantidad": 0
+      },
+      {
+        "id": 24,
+        "nombre": "Disco Solido SSD Team",
+        "tipo": "Almacenamiento",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_24.jpg",
+        "descripcion": "1TB GX2 530MB/s",
+        "precio": 45200,
+        "cantidad": 0
+      },
+      {
+        "id": 25,
+        "nombre": "Fuente LNZ",
+        "tipo": "Fuentes de poder",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_25.jpg",
+        "descripcion": "650W LNZ XT650-PS 80% Eficiencia",
+        "precio": 31500,
+        "cantidad": 0
+      },
+      {
+        "id": 26,
+        "nombre": "Fuente Deepcool",
+        "tipo": "Fuentes de poder",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_26.jpg",
+        "descripcion": "480GB A400 SATA III",
+        "precio": 51800,
+        "cantidad": 0
+      },
+      {
+        "id": 27,
+        "nombre": "Fuente Thermaltake",
+        "tipo": "Fuentes de poder",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_27.jpg",
+        "descripcion": "750W Thoughpower GF1 80 PLUS Gold Modular",
+        "precio": 79000,
+        "cantidad": 0
+      },
+      {
+        "id": 28,
+        "nombre": "Gabinete BRB",
+        "tipo": "Gabinetes",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_28.jpg",
+        "descripcion": "SBP-100 - 500W Gen",
+        "precio": 33700,
+        "cantidad": 0
+      },
+      {
+        "id": 29,
+        "nombre": "Gabinete Masterbox",
+        "tipo": "Gabinetes",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_29.jpg",
+        "descripcion": "MB530P ARGB 3xVidrios Templados 3x120mm ARGB Fans atx",
+        "precio": 96100,
+        "cantidad": 0
+      },
+      {
+        "id": 30,
+        "nombre": "Gabinete Corsair",
+        "tipo": "Gabinetes",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_30.jpg",
+        "descripcion": "465X RGB iCue Smart Mid Tower White",
+        "precio": 12900,
+        "cantidad": 0
+      },
+      {
+        "id": 31,
+        "nombre": "Mouse Logitech",
+        "tipo": "Mouses",
+        "categoria": "Perifericos",
+        "imagen": "./img/Img_Productos/id_31.jpg",
+        "descripcion": "M90 Black",
+        "precio": 5640,
+        "cantidad": 0
+      },
+      {
+        "id": 32,
+        "nombre": "Mouse MSI Clutch",
+        "tipo": "Mouses",
+        "categoria": "Perifericos",
+        "imagen": "./img/Img_Productos/id_32.jpg",
+        "descripcion": "GM41 RGB Lightweight Sensor PIXART 3389 16000DPI",
+        "precio": 21000,
+        "cantidad": 0
+      },
+      {
+        "id": 33,
+        "nombre": "Teclado Mecánico TDagger",
+        "tipo": "Teclados",
+        "categoria": "Perifericos",
+        "imagen": "./img/Img_Productos/id_33.jpg",
+        "descripcion": "T-TGK310 Rainbow Switch Blue",
+        "precio": 24600,
+        "cantidad": 0
+      },
+      {
+        "id": 34,
+        "nombre": "Teclado Mecanico Redragon",
+        "tipo": "Teclados",
+        "categoria": "Perifericos",
+        "imagen": "./img/Img_Productos/id_34.jpg",
+        "descripcion": "K550 Yama Black RGB",
+        "precio": 50100,
+        "cantidad": 0
+      },
+      {
+        "id": 35,
+        "nombre": "Auricular Redragon",
+        "tipo": "Auriculares",
+        "categoria": "Perifericos",
+        "imagen": "./img/Img_Productos/id_35.jpg",
+        "descripcion": "H260 Hylas White RGB",
+        "precio": 19000,
+        "cantidad": 0
+      },
+      {
+        "id": 36,
+        "nombre": "Auriculares HyperX",
+        "tipo": "Auriculares",
+        "categoria": "Perifericos",
+        "imagen": "./img/Img_Productos/id_36.jpg",
+        "descripcion": "Gaming Cloud II Wireless",
+        "precio": 92400,
+        "cantidad": 0
+      },
+      {
+        "id": 37,
+        "nombre": "Monitor Led Gfast",
+        "tipo": "Monitores",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_37.jpg",
+        "descripcion": "19.5 pulgadas T-195 VGAHDMI",
+        "precio": 64000,
+        "cantidad": 0
+      },
+      {
+        "id": 38,
+        "nombre": "Monitor Samsung",
+        "tipo": "Monitores",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_38.jpg",
+        "descripcion": "24 pulgadas Curvo F390 Full HD FreeSync",
+        "precio": 103000,
+        "cantidad": 0
+      },
+      {
+        "id": 39,
+        "nombre": "Monitor Led Asus",
+        "tipo": "Monitores",
+        "categoria": "Componentes",
+        "imagen": "./img/Img_Productos/id_39.jpg",
+        "descripcion": "LED TN 24 VG248QG-J FHD 165Hz 0.5Ms Freesync Gsync",
+        "precio": 215000,
+        "cantidad": 0
+      },
+      {
+        "id": 40,
+        "nombre": "Diskpro",
+        "tipo": "Estabilizadores",
+        "categoria": "Estabilizadores",
+        "imagen": "./img/Img_Productos/id_40.jpg",
+        "descripcion": "TCA-2000N LYONN AVR",
+        "precio": 12800,
+        "cantidad": 0
+      },
+      {
+        "id": 41,
+        "nombre": "UPS TRV",
+        "tipo": "Estabilizadores",
+        "categoria": "Estabilizadores",
+        "imagen": "./img/Img_Productos/id_41.jpg",
+        "descripcion": "650 C/USB",
+        "precio": 46000,
+        "cantidad": 0
+      },
+      {
+        "id": 42,
+        "nombre": "UPS APC",
+        "tipo": "Estabilizadores",
+        "categoria": "Estabilizadores",
+        "imagen": "./img/Img_Productos/id_42.jpg",
+        "descripcion": "BACK EASY BV 1000VA",
+        "precio": 109000,
+        "cantidad": 0
+      },
+      {
+        "id": 43,
+        "nombre": "Windows 11 Pro",
+        "tipo": "Sistema Operativo",
+        "categoria": "Sistema Operativo",
+        "imagen": "./img/Img_Productos/id_43.jpg",
+        "descripcion": "64B OEM SISTEMA NUEVO FISICO",
+        "precio": 63000,
+        "cantidad": 0
+      }
+    ]
+  }
+  
+
+

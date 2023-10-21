@@ -1,21 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const seccion__productos = document.querySelector(".seccion__productos");
     const seccion__destacados = document.querySelector(".seccion__destacados");
     const botones__ppals = document.querySelectorAll(".bot__ppal");
     const botones__secun = document.querySelectorAll(".bot__sec");
-    const tituloProductos = document.querySelector(".titulo__productos")
-    let agregarArticulos = document.querySelectorAll(".p__agregar")
-    const numCarrito = document.querySelector(".numero__car")
+    const tituloProductos = document.querySelector(".titulo__productos");
+    let agregarArticulos = document.querySelectorAll(".p__agregar");
+    const numCarrito = document.querySelector(".numero__car");
 
+    let productos;
 
-
+    fetch("./stock.json")
+        .then(response => response.json())
+        .then(data => {
+            productos = data.productos;
+            mostrarProductos(productos);
+            mostrarDestacados();
+        });
 
     function mostrarProductos(productosPorCategoria) {
+        if (!productosPorCategoria) return;
         seccion__productos.innerHTML = "";
         productosPorCategoria.forEach(producto => {
             const div = document.createElement("div");
-            div.classList.add("producto")
+            div.classList.add("producto");
             div.innerHTML = `
                 <img class="producto__img" src="${producto.imagen}" alt="${producto.nombre}">
                 <li class="p__nombre">${producto.nombre}</li>
@@ -24,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <button class="p__agregar" id="${producto.id}">Agregar</button>
                 `;
             seccion__productos.append(div);
-        })
+        });
         botonAgregar();
     }
     mostrarProductos(productos);
@@ -68,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function agregarAlCarrito(a) {
+        
         const idProducto = a.currentTarget.id;
         const agregados = productos.find(producto => producto.id == idProducto);
 
@@ -78,7 +86,26 @@ document.addEventListener("DOMContentLoaded", function () {
             agregados.cantidad = 1;
             productosCarrito.push(agregados);
         }
-
+        Toastify({
+            text: "Agregado al Carrito",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: false,
+            gravity: "top",
+            position: "right",
+            stopOnFocus: true,
+            style: {
+              background: "#ec0000",
+              borderRadius: ".5em",
+              fontSans: "Inter var",
+            },
+            offset: {
+                  x: "1rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+                  y: "5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+                },
+            onClick: function(){} // Callback after click
+          }).showToast();
         actualizarCarro();
 
         localStorage.setItem("productosEnCarrito", JSON.stringify(productosCarrito));
@@ -91,10 +118,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    function mostrarDestacados(productosPorCategoria) {
+    function mostrarDestacados() {
+        if (!productos) {
+            setTimeout(mostrarDestacados, 100);
+            return;
+        }
+
         const indicesAleatorios = [];
         while (indicesAleatorios.length < 5) {
-            const indiceAleatorio = Math.floor(Math.random() * productosPorCategoria.length);
+            const indiceAleatorio = Math.floor(Math.random() * productos.length);
             if (!indicesAleatorios.includes(indiceAleatorio)) {
                 indicesAleatorios.push(indiceAleatorio);
             }
@@ -102,21 +134,21 @@ document.addEventListener("DOMContentLoaded", function () {
         seccion__destacados.innerHTML = "";
 
         indicesAleatorios.forEach(indice => {
-            const producto = productosPorCategoria[indice];
+            const producto = productos[indice];
             const div = document.createElement("div");
             div.classList.add("producto");
             div.innerHTML = `
-            <img class="producto__img" src="${producto.imagen}" alt="${producto.nombre}">
-            <li class="p__nombre">${producto.nombre}</li>
-            <li class="p__descripcion">${producto.descripcion}</li>
-            <li class="p__precio">$${producto.precio}</li>
-            <button class="p__agregar" id="${producto.id}">Agregar</button>
-        `;
+                <img class="producto__img" src="${producto.imagen}" alt="${producto.nombre}">
+                <li class="p__nombre">${producto.nombre}</li>
+                <li class="p__descripcion">${producto.descripcion}</li>
+                <li class="p__precio">$${producto.precio}</li>
+                <button class="p__agregar" id="${producto.id}">Agregar</button>
+            `;
             seccion__destacados.append(div);
         });
 
         botonAgregar();
     }
-
-    mostrarDestacados(productos);
+    
+    mostrarDestacados();
 });
